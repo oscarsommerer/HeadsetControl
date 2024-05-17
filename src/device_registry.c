@@ -1,6 +1,7 @@
 #include "device_registry.h"
 
 #include "devices/corsair_void.h"
+#include "devices/corsair_h80.h"
 #include "devices/headsetcontrol_test.h"
 #include "devices/hyperx_calphaw.h"
 #include "devices/hyperx_cflight.h"
@@ -40,6 +41,7 @@ void init_devices()
 {
     // Corsair
     add_device(void_init);
+    add_device(h80_init);
     // HyperX
     add_device(calphaw_init);
     add_device(cflight_init);
